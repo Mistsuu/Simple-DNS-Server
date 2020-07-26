@@ -1,0 +1,5 @@
+abc.com A 157.240.199.35
+www.facebook.com A 216.58.200.78
+facebook.com A 216.58.200.78
+www.google.com A 157.240.199.35
+google.com A 157.240.199.35
