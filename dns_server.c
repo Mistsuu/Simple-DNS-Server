@@ -260,18 +260,6 @@ void run_server() {
             continue;
         }
 
-
-        // Get IP address from the sender...
-        hostp = gethostbyaddr(
-            &clientaddr.sin_addr.s_addr,
-            sizeof(clientaddr.sin_addr.s_addr),
-            AF_INET
-        );
-        if (!hostp) {
-            printf("[!] Error on gethostbyaddr()...\n");
-            continue;
-        }
-
         // Display the address...
         hostaddrp = inet_ntoa(clientaddr.sin_addr);
         if (!hostaddrp) printf("[!] Error on inet_ntoa()...\n");
